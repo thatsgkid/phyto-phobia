@@ -1,0 +1,5 @@
+Flask
+xarray
+gunicorn
+netcdf4
+scipy
