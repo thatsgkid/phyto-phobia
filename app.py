@@ -39,8 +39,6 @@ def chlorophyll_concentration():
             chlor_at_point = chlor_a.sel(lat=lat, lon=lon, method='nearest')
             chlor_value = chlor_at_point.values
             return jsonify({
-                "latitude": lat,
-                "longitude": lon,
                 "chlorophyll_concentration": chlor_value.tolist()
             })
         except Exception as e:
